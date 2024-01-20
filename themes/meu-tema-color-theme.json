@@ -1,0 +1,11 @@
+{
+  "name": "larticle-bin",
+  "semanticTokenColors": {
+    "title": "#ff0000",
+    "text": "#1d116a",
+    "colors": "#ee00c6",
+    "left": "#596bf6",
+    "right": "#6a327a",
+    "coments": "#428389"
+  }
+}

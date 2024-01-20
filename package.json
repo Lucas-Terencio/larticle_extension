@@ -10,12 +10,30 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
-    "commands": [{
-      "command": "larticle.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "larticle.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "colors": [{
+        "id": "title",
+        "description": "Cor para destaque especial em My Extension",
+        "defaults": {
+          "light": "#FF0000",
+          "dark": "#FF0000"
+        }
+      }
+    ],
+    "languages": [
+      {
+        "id": "plaintext",
+        "extensions": [".txt"],
+        "configuration": "./language-configuration.json"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
